@@ -5,6 +5,7 @@
       "dashboard":  "dashboard",
       "organizations": "organizations",
       "databases": "databases",
+      "datasources": "datasources",
       "":           "defaultRoute",
     },
     defaultRoute: function () {
@@ -25,6 +26,10 @@
     dashboard: function () {
       XT.container.setCurrentView("dashboard");
       XT.app.$.topToolbar.setActive("dashboard");
+    },
+    datasources: function () {
+      XT.container.setCurrentView("datasources");
+      XT.app.$.topToolbar.setActive("datasources");
     }
   });
   XT.router = new Router();

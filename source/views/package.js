@@ -4,6 +4,8 @@ enyo.depends(
   "columnar_list.js",
   "admin_object_interface.js",
   "form_elements.js",
+  "datasource.js",
+  "datasources.js",
   "database.js",
   "organization.js",
   "user.js",

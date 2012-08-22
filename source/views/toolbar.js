@@ -8,7 +8,8 @@ enyo.kind({
       {content: "Dashboard"},
       {content: "Users"},
       {content: "Organizations"},
-      {content: "Databases"}]}
+      {content: "Databases"},
+      {content: "Datasources"}]}
   ],
   setActive: function (name) {
     var c = this.$.buttons.children, v;

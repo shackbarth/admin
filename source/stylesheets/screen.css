@@ -117,7 +117,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /** XV.OrganizationEditor */
 /* line 63, ../sass/screen.scss */
 .xv-organization-editor {
-  height: 300px;
+  display: block;
 }
 
 /* line 68, ../sass/screen.scss */
@@ -137,8 +137,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: 5px;
   margin-right: 10px;
   width: 50%;
+  height: 200px;
+  overflow-y: auto;
 }
-/* line 77, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .xv-organization-editor .xv-selected-list .xv-selected-organization-item {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -146,29 +148,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-sizing: border-box;
   height: 60px;
   padding: 10px;
-  font-size: 18px;
+  font-size: 12px;
 }
-/* line 83, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .xv-organization-editor .xv-selected-list .xv-selected-organization-item .name {
   margin-left: 10px;
   line-height: 40px;
 }
-/* line 87, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .xv-organization-editor .xv-selected-list .xv-selected-organization-item .icon {
   height: 20px;
   width: 20px;
   position: relative;
   top: 10px;
 }
-/* line 92, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .xv-organization-editor .xv-selected-list .xv-selected-organization-item .icon:hover {
   cursor: pointer;
 }
-/* line 96, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 .xv-organization-editor .xv-selected-list .xv-selected-organization-item .icon.ok {
   float: right;
 }
-/* line 100, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 .xv-organization-editor .xv-selected-list .xv-selected-organization-item .username {
   position: absolute;
   height: 40px;
@@ -177,13 +179,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   right: 40px;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .xv-organization-editor .xv-nested-organization-list {
   width: 50%;
+  height: 200px;
+}
+/* line 117, ../sass/screen.scss */
+.xv-organization-editor .xv-nested-organization-list .xv-columnar-list-body {
+  height: inherit;
 }
 
 /** XV.FormElements */
-/* line 120, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .xv-form-elements .xv-form-element-section {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -208,15 +215,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #fff;
   font-size: 13px;
 }
-/* line 131, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .xv-form-elements .xv-form-element-section .onyx-input-decorator {
   background-color: #ddd;
 }
-/* line 133, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .xv-form-elements .xv-form-element-section .onyx-input-decorator.onyx-focused {
   background-color: #fff;
 }
-/* line 138, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .xv-form-elements .xv-form-element-section .xv-form-element-section-label {
   /*@include border-radius(3px);*/
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #777777), color-stop(70%, #222222));
@@ -240,20 +247,54 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: bold;
   margin-left: -5px;
 }
-/* line 154, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .xv-form-elements .xv-form-element-section .xv-form-element-spacer {
   position: relative;
   height: 45px;
 }
+/* line 165, ../sass/screen.scss */
+.xv-form-elements .xv-form-element-section .xv-form-element {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aaaaaa), color-stop(70%, #555555));
+  background-image: -webkit-linear-gradient(#aaaaaa, #555555 70%);
+  background-image: -moz-linear-gradient(#aaaaaa, #555555 70%);
+  background-image: -o-linear-gradient(#aaaaaa, #555555 70%);
+  background-image: -ms-linear-gradient(#aaaaaa, #555555 70%);
+  background-image: linear-gradient(#aaaaaa, #555555 70%);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  padding: 10px;
+  margin: 10px;
+  color: #fff;
+  font-size: 13px;
+}
+/* line 177, ../sass/screen.scss */
+.xv-form-elements .xv-form-element-section .xv-form-element .onyx-input-decorator {
+  background-color: #ddd;
+}
+/* line 179, ../sass/screen.scss */
+.xv-form-elements .xv-form-element-section .xv-form-element .onyx-input-decorator.onyx-focused {
+  background-color: #fff;
+}
 
 /** XV.ColumnarList */
-/* line 170, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .xv-columnar-list .xv-columnar-list-header {
   position: absolute;
   top: 15px;
   z-index: 100;
 }
-/* line 175, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .xv-columnar-list .xv-columnar-list-header .xv-columnar-list-header-column {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -274,7 +315,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: inline-block;
   margin-left: 10px;
 }
-/* line 182, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .xv-columnar-list .xv-columnar-list-header .xv-columnar-list-header-column .xv-columnar-list-header-item {
   /*@include border-radius(3px);*/
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #777777), color-stop(70%, #222222));
@@ -297,7 +338,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-left: -5px;
 }
 
-/* line 201, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .xv-columnar-list .xv-columnar-list-body .xv-columnar-list-column {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -322,12 +363,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #fff;
   font-size: 13px;
 }
-/* line 212, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 .xv-columnar-list .xv-columnar-list-body .xv-columnar-list-column .xv-columnar-list-column-spacer {
   position: relative;
   height: 45px;
 }
-/* line 216, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 .xv-columnar-list .xv-columnar-list-body .xv-columnar-list-column .xv-columnar-list-row {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -336,7 +377,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 0 10px;
   overflow: hidden;
 }
-/* line 221, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 .xv-columnar-list .xv-columnar-list-body .xv-columnar-list-column .xv-columnar-list-row .xv-columnar-list-row-value {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -345,12 +386,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 10px;
   overflow: hidden;
 }
-/* line 226, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 .xv-columnar-list .xv-columnar-list-body .xv-columnar-list-column .xv-columnar-list-row .xv-columnar-list-row-value:hover {
   cursor: pointer;
   background-color: #aaa;
 }
-/* line 231, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 .xv-columnar-list .xv-columnar-list-body .xv-columnar-list-column .xv-columnar-list-row .xv-columnar-list-row-bottom-border {
   border-top: 1px solid #222;
   border-bottom: 1px solid #888;

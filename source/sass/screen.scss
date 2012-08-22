@@ -61,7 +61,7 @@
 /** XV.OrganizationEditor */
 
 .xv-organization-editor {
-  height: 300px;
+  display: block;
 }
 
 .xv-organization-editor {
@@ -73,12 +73,14 @@
     margin: 5px;
     margin-right: 10px;
     width: 50%;
+    height: 200px;
+    overflow-y: auto;
     
     .xv-selected-organization-item {
       @include box-sizing(border-box);
       height: 60px;
       padding: 10px;
-      font-size: 18px;
+      font-size: 12px;
       
       .name {
         margin-left: 10px;
@@ -111,6 +113,10 @@
 .xv-organization-editor {
   .xv-nested-organization-list {
     width: 50%;
+    height: 200px;
+    .xv-columnar-list-body {
+      height: inherit;
+    }
   }
 }
 
@@ -157,7 +163,23 @@
     }
     
     .xv-form-element {
+      @include box-sizing(border-box);
+      @include background-image(linear-gradient(#aaa, #555 70%));
+      @include border-radius(5px);
+      display: inline-block;
+      position: relative;
+      z-index: 10;
+      padding: 10px;
+      margin: 10px;
+      color: #fff;
+      font-size: 13px;
 
+      .onyx-input-decorator {
+        background-color: #ddd;
+        &.onyx-focused {
+          background-color: #fff;
+        }
+      }
     }
   }
 }

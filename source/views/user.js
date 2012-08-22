@@ -25,6 +25,7 @@ enyo.kind({
   name: "XV.SelectedOrganizations",
   kind: "Repeater",
   classes: "xv-selected-list",
+  fit: true,
   published: {
     selectedOrganizations: null
   },
@@ -152,6 +153,7 @@ enyo.kind({
     _.each(o, function (g) {
       elem.$.selected.selectOrganization(g.name, g.username);
     }, this);
+    elem.$.list.fetch();
   },
   saveOrganizations: function (model, attr, elem) {
     var o = this.$.form.$.organizations.$.selected.getSelectedOrganizations();
@@ -167,6 +169,6 @@ enyo.kind({
       {name: "id", placeholder: "_id".loc()},
       {name: "password", type: "password", placeholder: "_password".loc()}]},
     {label: "Organizations", components: [
-      {name: "organizations", kind: "XV.OrganizationEditor"}]}
+      {name: "organizations", fit: true, height: 250, kind: "XV.OrganizationEditor"}]}
   ]
 });
