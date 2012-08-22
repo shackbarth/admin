@@ -1,0 +1,17 @@
+enyo.depends(
+  "dashboard.js",
+  "editor.js",
+  "columnar_list.js",
+  "admin_object_interface.js",
+  "form_elements.js",
+  "database.js",
+  "organization.js",
+  "user.js",
+  "users.js",
+  "toolbar.js",
+  "container.js",
+  "organizations.js",
+  "databases.js",
+  "list_control_bar.js",
+  "editor_bar.js"
+);
