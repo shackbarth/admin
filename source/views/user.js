@@ -162,7 +162,6 @@ enyo.kind({
     for (i = 0; i < organizations.length; i++) {
       if (!organizations[i].username) {
         alert("Error: you must set a username for all organizations. Remember to only use chrome and click the green check button!");
-        return true;
       }
     }
     model.set("organizations", organizations);
