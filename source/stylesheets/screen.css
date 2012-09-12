@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,83 +19,54 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-body {
+/* line 22, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
   line-height: 1;
 }
 
-/* line 22, ../../../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, ../../../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 9, ../sass/screen.scss */
-.xt-app {
-  /*
-  .xv-organization-editor {
-    .xv-nested-organization-list {
-      height: 150px;
-      width: 50%;
-    }
-    .xv-selected-list {
-      height: 150px;
-      width: 50%;
-    }
-    .xv-selected-organization-item {
-      padding: 5px;
-      font-size: 12px;
-      .name {
-        width: 50%;
-      }
-      .username {
-        width: 30%;
-      }
-      .icon {
-        width: 20px;
-        height: 20px;
-      }
-    }
-  }
-  */
-}
 /* line 10, ../sass/screen.scss */
 .xt-app .xv-container {
   position: relative;
@@ -115,22 +86,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /**********************************************************************/
 /** XV.OrganizationEditor */
-/* line 63, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 .xv-organization-editor {
   display: block;
 }
 
-/* line 68, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 .xv-organization-editor .xv-selected-list {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
   -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
   background-color: #fff;
   color: #222;
@@ -140,37 +109,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 200px;
   overflow-y: auto;
 }
-/* line 79, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 .xv-organization-editor .xv-selected-list .xv-selected-organization-item {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   height: 60px;
   padding: 10px;
   font-size: 12px;
 }
-/* line 85, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .xv-organization-editor .xv-selected-list .xv-selected-organization-item .name {
   margin-left: 10px;
   line-height: 40px;
 }
-/* line 89, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .xv-organization-editor .xv-selected-list .xv-selected-organization-item .icon {
   height: 20px;
   width: 20px;
   position: relative;
   top: 10px;
 }
-/* line 94, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .xv-organization-editor .xv-selected-list .xv-selected-organization-item .icon:hover {
   cursor: pointer;
 }
-/* line 98, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .xv-organization-editor .xv-selected-list .xv-selected-organization-item .icon.ok {
   float: right;
 }
-/* line 102, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .xv-organization-editor .xv-selected-list .xv-selected-organization-item .username {
   position: absolute;
   height: 40px;
@@ -179,34 +147,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   right: 40px;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .xv-organization-editor .xv-nested-organization-list {
   width: 50%;
   height: 200px;
 }
-/* line 117, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 .xv-organization-editor .xv-nested-organization-list .xv-columnar-list-body {
   height: inherit;
 }
 
 /** XV.FormElements */
-/* line 126, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 .xv-form-elements .xv-form-element-section {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aaaaaa), color-stop(70%, #555555));
   background-image: -webkit-linear-gradient(#aaaaaa, #555555 70%);
   background-image: -moz-linear-gradient(#aaaaaa, #555555 70%);
   background-image: -o-linear-gradient(#aaaaaa, #555555 70%);
-  background-image: -ms-linear-gradient(#aaaaaa, #555555 70%);
   background-image: linear-gradient(#aaaaaa, #555555 70%);
-  -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
   -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
   position: relative;
   z-index: 10;
@@ -215,26 +180,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #fff;
   font-size: 13px;
 }
-/* line 137, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .xv-form-elements .xv-form-element-section .onyx-input-decorator {
   background-color: #ddd;
 }
-/* line 139, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 .xv-form-elements .xv-form-element-section .onyx-input-decorator.onyx-focused {
   background-color: #fff;
 }
-/* line 144, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 .xv-form-elements .xv-form-element-section .xv-form-element-section-label {
   /*@include border-radius(3px);*/
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #777777), color-stop(70%, #222222));
   background-image: -webkit-linear-gradient(#777777, #222222 70%);
   background-image: -moz-linear-gradient(#777777, #222222 70%);
   background-image: -o-linear-gradient(#777777, #222222 70%);
-  background-image: -ms-linear-gradient(#777777, #222222 70%);
   background-image: linear-gradient(#777777, #222222 70%);
-  -moz-box-shadow: #444444 0 4px 5px -2px;
   -webkit-box-shadow: #444444 0 4px 5px -2px;
-  -o-box-shadow: #444444 0 4px 5px -2px;
+  -moz-box-shadow: #444444 0 4px 5px -2px;
   box-shadow: #444444 0 4px 5px -2px;
   /*@include text-shadow(#ddd -1px -1px 0, #000 1px 1px 0);*/
   position: absolute;
@@ -247,28 +210,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: bold;
   margin-left: -5px;
 }
-/* line 160, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .xv-form-elements .xv-form-element-section .xv-form-element-spacer {
   position: relative;
   height: 45px;
 }
-/* line 165, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 .xv-form-elements .xv-form-element-section .xv-form-element {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aaaaaa), color-stop(70%, #555555));
   background-image: -webkit-linear-gradient(#aaaaaa, #555555 70%);
   background-image: -moz-linear-gradient(#aaaaaa, #555555 70%);
   background-image: -o-linear-gradient(#aaaaaa, #555555 70%);
-  background-image: -ms-linear-gradient(#aaaaaa, #555555 70%);
   background-image: linear-gradient(#aaaaaa, #555555 70%);
-  -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
   -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
   display: inline-block;
   position: relative;
@@ -278,55 +238,46 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #fff;
   font-size: 13px;
 }
-/* line 177, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 .xv-form-elements .xv-form-element-section .xv-form-element .onyx-input-decorator {
   background-color: #ddd;
 }
-/* line 179, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .xv-form-elements .xv-form-element-section .xv-form-element .onyx-input-decorator.onyx-focused {
   background-color: #fff;
 }
 
 /** XV.ColumnarList */
-/* line 192, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 .xv-columnar-list .xv-columnar-list-header {
   position: absolute;
   top: 15px;
   z-index: 100;
 }
-/* line 197, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 .xv-columnar-list .xv-columnar-list-header .xv-columnar-list-header-column {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
-  -o-border-top-left-radius: 3px;
-  -ms-border-top-left-radius: 3px;
-  -khtml-border-top-left-radius: 3px;
   border-top-left-radius: 3px;
   -moz-border-radius-topright: 3px;
   -webkit-border-top-right-radius: 3px;
-  -o-border-top-right-radius: 3px;
-  -ms-border-top-right-radius: 3px;
-  -khtml-border-top-right-radius: 3px;
   border-top-right-radius: 3px;
   display: inline-block;
   margin-left: 10px;
 }
-/* line 204, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 .xv-columnar-list .xv-columnar-list-header .xv-columnar-list-header-column .xv-columnar-list-header-item {
   /*@include border-radius(3px);*/
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #777777), color-stop(70%, #222222));
   background-image: -webkit-linear-gradient(#777777, #222222 70%);
   background-image: -moz-linear-gradient(#777777, #222222 70%);
   background-image: -o-linear-gradient(#777777, #222222 70%);
-  background-image: -ms-linear-gradient(#777777, #222222 70%);
   background-image: linear-gradient(#777777, #222222 70%);
-  -moz-box-shadow: #444444 0 4px 5px -2px;
   -webkit-box-shadow: #444444 0 4px 5px -2px;
-  -o-box-shadow: #444444 0 4px 5px -2px;
+  -moz-box-shadow: #444444 0 4px 5px -2px;
   box-shadow: #444444 0 4px 5px -2px;
   /*@include text-shadow(#ddd -1px -1px 0, #000 1px 1px 0);*/
   display: inline-block;
@@ -338,23 +289,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-left: -5px;
 }
 
-/* line 223, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .xv-columnar-list .xv-columnar-list-body .xv-columnar-list-column {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aaaaaa), color-stop(70%, #555555));
   background-image: -webkit-linear-gradient(#aaaaaa, #555555 70%);
   background-image: -moz-linear-gradient(#aaaaaa, #555555 70%);
   background-image: -o-linear-gradient(#aaaaaa, #555555 70%);
-  background-image: -ms-linear-gradient(#aaaaaa, #555555 70%);
   background-image: linear-gradient(#aaaaaa, #555555 70%);
-  -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
   -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
   z-index: 10;
   display: inline-block;
@@ -363,35 +311,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #fff;
   font-size: 13px;
 }
-/* line 234, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 .xv-columnar-list .xv-columnar-list-body .xv-columnar-list-column .xv-columnar-list-column-spacer {
   position: relative;
   height: 45px;
 }
-/* line 238, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 .xv-columnar-list .xv-columnar-list-body .xv-columnar-list-column .xv-columnar-list-row {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 10px;
   overflow: hidden;
 }
-/* line 243, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 .xv-columnar-list .xv-columnar-list-body .xv-columnar-list-column .xv-columnar-list-row .xv-columnar-list-row-value {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 10px;
   overflow: hidden;
 }
-/* line 248, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .xv-columnar-list .xv-columnar-list-body .xv-columnar-list-column .xv-columnar-list-row .xv-columnar-list-row-value:hover {
   cursor: pointer;
   background-color: #aaa;
 }
-/* line 253, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 .xv-columnar-list .xv-columnar-list-body .xv-columnar-list-column .xv-columnar-list-row .xv-columnar-list-row-bottom-border {
   border-top: 1px solid #222;
   border-bottom: 1px solid #888;
