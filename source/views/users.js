@@ -15,7 +15,9 @@ enyo.kind({
   classes: "xv-user-selection-list",
   components: [
     {kind: "XV.ListControlBar"},
-    {kind: "XV.UserList"}
+    {kind: "Scroller", components: [
+      {kind: "XV.UserList"}
+    ]}
   ]
 });
 

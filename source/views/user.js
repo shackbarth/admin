@@ -156,8 +156,15 @@ enyo.kind({
     elem.$.list.fetch();
   },
   saveOrganizations: function (model, attr, elem) {
-    var o = this.$.form.$.organizations.$.selected.getSelectedOrganizations();
-    model.set("organizations", o);
+    var i,
+      organizations = this.$.form.$.organizations.$.selected.getSelectedOrganizations();
+    // validate
+    for (i = 0; i < organizations.length; i++) {
+      if (!organizations[i].username) {
+        alert("Error: you must set a username for all organizations. Remember to only use chrome and click the green check button!");
+      }
+    }
+    model.set("organizations", organizations);
   }
 });
 
