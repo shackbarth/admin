@@ -44,7 +44,6 @@ enyo.kind({
   fit: true,
   classes: "xv-datasource-selection-list",
   components: [
-    {kind: "XV.ListControlBar"},
     {kind: "XV.DatasourceList"}
   ]
 });

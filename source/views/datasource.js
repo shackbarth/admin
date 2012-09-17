@@ -1,34 +1,12 @@
 enyo.kind({
   name: "XV.DatasourceForm",
-  kind: "XV.Editor",
-  attributes: [
-    {elem: "name", field: "name"},
-    {elem: "hostname", field: "hostname"},
-    {elem: "port", field: "port"},
-    {elem: "description", field: "description"},
-    {elem: "location", field: "location"}
-  ],
-  components: [
-    {name: "controls", kind: "XV.EditorBar"},
-    {name: "form", kind: "XV.DatasourceFormElements"}
-  ]
-});
-
-enyo.kind({
-  name: "XV.DatasourceForm",
   published: {
     model: null,
     attributes: null,
     isNew: false
   },
   handlers: {
-    onCancelTapped: "cancelTapped",
-    onSaveTapped: "saveTapped",
-    onDeleteTapped: "deleteTapped"
-  },
-  events: {
-    onDidSave: "",
-    onDidDestroyModel: ""
+    onCancelTapped: "cancelTapped"
   },
   attributes: [
     {elem: "name", field: "name"},
