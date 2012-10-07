@@ -1,9 +1,41 @@
 enyo.kind({
   name: "XV.Datasources",
-  kind: "XV.AdminObjectInterface",
-  modelClass: "XM.Datasource",
-  listClass: "XV.DatasourceSelectionList",
-  formClass: "XV.DatasourceForm"
+  kind: "XV.ScreenCarousel",
+  handlers: {
+    onObjectSelected: "objectSelected",
+    onCancelTapped: "goBack",
+  },
+  published: {
+    model: null,
+    modelClass: "XM.Datasource",
+    listClass: "XV.DatasourceSelectionList",
+    formClass: "XV.DatasourceForm"
+  },
+  create: function () {
+    var m = this.getModelClass(),
+        list = this.getListClass(),
+        form = this.getFormClass();
+    this.inherited(arguments);
+    m = XT.getObjectByName(m);
+    this.setModel(m);
+    this.createComponent({
+      name: "list",
+      kind: list
+    });
+    this.createComponent({
+      name: "form",
+      kind: form
+    });
+  },
+  objectSelected: function (inSender, inEvent) {
+    var m = inEvent.model;
+    this.$.form.setModel(m);
+    this.setCurrentView("form");
+  },
+  goBack: function () {
+    this.setCurrentView("list");
+    return true;
+  }
 });
 
 enyo.kind({
@@ -12,7 +44,6 @@ enyo.kind({
   fit: true,
   classes: "xv-datasource-selection-list",
   components: [
-    {kind: "XV.ListControlBar"},
     {kind: "XV.DatasourceList"}
   ]
 });
