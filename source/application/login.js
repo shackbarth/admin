@@ -5,6 +5,7 @@ trailing:true white:true*/
 
 (function () {
   // first of 2 types of checks, this being the most obvious test
+  /*
   var c = enyo.getCookie("xtsessioncookie"),
     h = document.location.hostname,
     p = document.location.protocol,
@@ -22,4 +23,5 @@ trailing:true white:true*/
   } catch (e) {
     document.location = noAuthRedirect;
   }
+  */
 }());
