@@ -16,3 +16,6 @@
 [submodule "lib/enyo-x"]
 	path = lib/enyo-x
 	url = git://github.com/xtuple/enyo-x.git
+[submodule "lib/models"]
+	path = lib/models
+	url = git://github.com/xtuple/models.git
