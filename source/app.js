@@ -123,6 +123,8 @@ white:true*/
           progressBar.animateProgressTo(completed);
         };
 
+      console.log("startup process", this.state);
+
       // 1: Load session data
       if (this.state === UNINITIALIZED) {
         this.state = LOADING_SESSION;
