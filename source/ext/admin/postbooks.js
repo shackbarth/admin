@@ -11,9 +11,9 @@ trailing:true white:true*/
     // APPLICATION
     //
     var panels = [
-      {name: "globalUserList", kind: "XV.GlobalUserList"},
-      {name: "organizationList", kind: "XV.OrganizationList"},
-      {name: "databaseServerList", kind: "XV.DatabaseServerList"}
+      {name: "userList", kind: "XV.UserList"},
+      {name: "databaseServerList", kind: "XV.DatabaseServerList"},
+      {name: "organizationList", kind: "XV.OrganizationList"}
     ];
 
     XT.app.$.postbooks.appendPanels("setup", panels);

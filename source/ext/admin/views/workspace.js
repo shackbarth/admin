@@ -5,50 +5,19 @@ trailing:true white:true*/
 
 (function () {
 
-  XT.extensions.project.initWorkspaces = function () {
-    var extensions;
- 
-    // ..........................................................
-    // ACCOUNT
-    //
-  
-    extensions = [
-      {kind: "XV.AccountProjectsBox", container: "panels",
-        attr: "projectRelations"}
-    ];
+  // ..........................................................
+  // DATABASE SERVER
+  //
 
-    XV.appendExtension("XV.AccountWorkspace", extensions);
-  
-    // ..........................................................
-    // CONTACT
-    //
-  
-    extensions = [
-      {kind: "XV.ContactProjectsBox", container: "panels",
-        attr: "projectRelations"}
-    ];
+  enyo.kind({
+    name: "XV.DatabaseServerWorkspace",
+    kind: "XV.Workspace",
+    title: "_databaseServer".loc(),
+    model: "XM.DatabaseServer"
+  });
 
-    XV.appendExtension("XV.ContactWorkspace", extensions);
+  XV.registerModelWorkspace("XM.DatabaseServer", "XV.DatabaseServerWorkspace");
 
-    // ..........................................................
-    // INCIDENT
-    //
-  
-    extensions = [
-      {kind: "XV.ProjectWidget", container: "mainGroup", attr: "project"}
-    ];
 
-    XV.appendExtension("XV.IncidentWorkspace", extensions);
-  
-    // ..........................................................
-    // PROJECT
-    //
-  
-    extensions = [
-      {kind: "XV.ProjectIncidentsBox", container: "panels", attr: "incidentRelations"}
-    ];
-
-    XV.appendExtension("XV.ProjectWorkspace", extensions);
-  };
 
 }());
